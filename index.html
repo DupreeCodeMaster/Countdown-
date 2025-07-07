@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Countdown Erstellen</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- QR-Code Bib-->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+      <h1>Countdown Erstellen</h1>
+
+      <div class="countdown-form">
+        <input type="text" id="countdown-name" placeholder="Countdown Name">
+        <input type="datetime-local" id="countdown-date">
+        <button id="create-countdown">Countdown erstellen</button>
+      </div>
+
+      <div class="countdown-display">
+        <h2 id="current-countdown-name"></h2>
+        <div class="timer">
+          <span id="days">00</span>Tage
+          <span id="hours">00</span>Stunden
+          <span id="minutes">00</span>Minuten
+          <span id="seconds">00</span>Sekunden
+        </div>
+        <div id="qr-code"></div>
+      </div>
+
+      <div class="celebration" id="celebration">
+        <div class="fireworks-left"></div>
+        <div class="message">Congratulations, it's finally time!</div>
+        <div class="fireworks-right"></div>
+      </div>
+
+      <script src="script.js"></script>
+      <!--Optional: Feuerwerkscript -->
+      <!-- <script src="fireworks.js"></script> -->
+    </div>
+</body>
+</html>
